@@ -14,7 +14,7 @@ ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022 \
 
 - The Disagreement Problem in Explainable Machine Learning: A Practitioner’s Perspective \
 Satyapriya Krishna\*, **Tessa Han**\*, Alex Gu, Javin Pombra, Shahin Jabbari, Steven Wu, and Himabindu Lakkaraju (\*equal contribution) \
-ACM CHI Workshop on Trust and Reliance in AI-Human Teams (TRAIT), 2022
+ACM CHI Workshop on Trust and Reliance in AI-Human Teams (TRAIT), 2022 \
 ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022 \
 \>\> Oral Spotlight Presentation
 
