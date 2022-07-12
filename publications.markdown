@@ -16,7 +16,7 @@ Oral Spotlight Presentation
 Satyapriya Krishna\*, **Tessa Han**\*, Alex Gu, Javin Pombra, Shahin Jabbari, Steven Wu, and Himabindu Lakkaraju (\*equal contribution) \
 ACM CHI Workshop on Trust and Reliance in AI-Human Teams (TRAIT), 2022
 ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022 \
->> Oral Spotlight Presentation
+\>\> Oral Spotlight Presentation
 
 - Python and R packages for Interactive Visualization of Spatial Single-Cell Omics Data \
 Mark Keller, Trevor Manz, **Tessa Han**, Ilan Gold, Chuck McCallum, and Nils Gehlenborg \
