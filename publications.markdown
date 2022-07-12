@@ -10,7 +10,7 @@ order: 1
 - Which Explanation Should I Choose? A Function Approximation Perspective to Characterizing Post Hoc Explanations \
 **Tessa Han**, Suraj Srinivas, and Himabindu Lakkaraju \
 ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022 \
-Oral Spotlight Presentation
+\>\> Oral Spotlight Presentation
 
 - The Disagreement Problem in Explainable Machine Learning: A Practitioner’s Perspective \
 Satyapriya Krishna\*, **Tessa Han**\*, Alex Gu, Javin Pombra, Shahin Jabbari, Steven Wu, and Himabindu Lakkaraju (\*equal contribution) \
@@ -29,7 +29,7 @@ Journal of Clinical Oncology, 2020
 - Dysregulated miRNAs after Uniform Treatment Predict Outcome of Newly-Diagnosed Multiple Myeloma \
 **Tessa Han**, Stephane Minvielle, Anil Aktas Samur, Mariateresa Fulciniti, Florence Magrangeas, Paul G. Richardson, Philippe Moreau, Michel Attal, Kenneth C. Anderson, Hervé Avet-Loiseau, Giovanni Parmigiani, Mehmet Kemal Samur, and Nikhil C. Munshi \
 Blood (Supplemental Issue), 2019 \
-Abstract Achievement Award
+\>\> Abstract Achievement Award
 
 
 ## Theses
@@ -37,4 +37,4 @@ Abstract Achievement Award
 - Applying Mediation Analysis to Predict Feed Forward Loops as Gene Regulatory Networks in Multiple Myeloma – A Novel Statistical Approach \
 Honors thesis for a joint A.B. degree in Statistics and Molecular and Cellular Biology \
 Supervisor: Prof. Giovanni Parmigiani (Harvard University) \
-Hoopes Prize for "outstanding scholarly work or research"
+\>\> Hoopes Prize for "outstanding scholarly work or research"
