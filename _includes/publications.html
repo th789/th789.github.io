@@ -1,0 +1,74 @@
+<ul>
+{% for paper in site.data.pubs.papers %}
+<li>
+ <p>
+    {{ paper.title }} <br>
+    {% for author in paper.authors %}
+      {% if author == "S. Srinivas" %} 
+      <b> {{ author }}</b>,
+      {% else %} {{ author }}, {% endif %}
+      {% endfor %} {{ paper.lastauthor }}<br>
+    <i>{{ paper.journal }}</i>, {{ paper.year }} <br>
+
+<a href="{{ paper.url | escape}}">pdf </a>
+
+{% if paper.presentation %}
+/ <a href="{{paper.presentation | escape}}"> slides </a>
+{% endif %}
+
+{% if paper.poster %}
+/ <a href="{{paper.poster | escape}}"> poster </a>
+{% endif %}
+
+{% if paper.code %}
+/<a href="{{paper.code | escape}}"> code </a>
+{% endif %}
+
+{% if paper.workshop %}
+/<a href="{{paper.workshop | escape}}"> workshop version </a>
+{% endif %}
+
+<a class="collapsible">/ tldr</a>
+<span class="content">
+{{ paper.tldr }}
+</span>
+
+{% if paper.notes %} <br>
+<mark style="font-size:90%; padding:0px; margin:0px">{{ paper.notes }}</mark>
+{% endif %}
+<br>
+
+</p>
+</li>
+{% endfor %}
+</ul>
+
+<style>
+p{
+  padding-bottom: 10px;
+}
+
+.content {
+  padding: 10px 0px;
+  display: none;
+  overflow: hidden;
+}
+
+</style>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>

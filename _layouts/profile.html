@@ -1,0 +1,93 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="columns">
+  <div class="column-1">
+    <img src="profile.jpeg" class="profile-picture" width=80%></img>
+
+    <br>
+    <a href="mailto:than@g.harvard.edu" class="fa fa-envelope"></a>  
+    <a href="https://scholar.google.com/citations?user=exlT558AAAAJ&hl=en" class="fa fa-graduation-cap"></a> 
+    <a href="https://github.com/th789" class="fa fa-github"></a> 
+    <a href="https://www.linkedin.com/in/tessahan" class="fa fa-linkedin"></a> 
+    <br>
+    
+    <!-- <a href="pdfs/resume.pdf" class="block"> -->
+    <!-- <span class="fa fa-file-pdf-o"> </span> CV  -->
+    <!-- </a> -->
+
+  </div>
+  <div class="column-2">
+      {{ content }}
+  </div>
+
+</div>
+ 
+
+<style>
+
+img{
+  border-radius: 50%;
+}
+
+.block{
+  background-color: white;
+  border: 1px solid;
+  color: black; 
+  padding: 6% 6% 4% 0%;
+  text-align: left;
+  text-decoration: none;
+  display: inline;
+  font-size: 14px;
+  margin: 0% 25%;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+.block:hover{
+  text-decoration: none;
+  background-color: #3366BB;
+  color: white;
+}
+
+.fa {
+  padding: 4% 6%;
+  font-size: 20px;
+  width: 2%;
+  text-align: center;
+  text-decoration: none;
+  margin: 2% 2%;
+}
+
+.fa:hover {
+    opacity: 0.3;
+    text-decoration: none;
+}
+
+.columns{
+  Width: 100%;
+  }
+  .column-1, .column-2 {
+    width:100%;
+  }
+  @media (min-width:30em){
+    .column-1 {
+      width: 30%;
+      float: left;
+      justify-content: center;
+    }
+    .column-2 {
+      width: 70%;
+      float: left;
+      justify-content: center;
+    } 
+    .columns {
+      content:"";
+      display: table;
+      clear: both;
+    }
+  }
+</style>
