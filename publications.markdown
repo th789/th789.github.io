@@ -11,14 +11,16 @@ order: 1
 **Tessa Han**, Suraj Srinivas, and Himabindu Lakkaraju \
 ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022 \
 \>\> Oral Spotlight Presentation \
-\>\> Best Paper Award \
+\>\> Best Paper Award 
 
 
 - The Disagreement Problem in Explainable Machine Learning: A Practitioner’s Perspective \
 Satyapriya Krishna\*, **Tessa Han**\*, Alex Gu, Javin Pombra, Shahin Jabbari, Steven Wu, and Himabindu Lakkaraju (\*equal contribution) \
 ACM CHI Workshop on Trust and Reliance in AI-Human Teams (TRAIT), 2022 \
 ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022 \
-\>\> Oral Spotlight Presentation
+\>\> Oral Spotlight Presentation \
+\>\> Featured on Fortune ([Article 1](https://fortune.com/2022/02/08/learning-to-code-deepmind-alphacode/) and [Article 2](https://fortune.com/2022/03/22/ai-explainable-radiology-medicine-crisis-eye-on-ai/)) \
+\>\> Featured on Analytics India Magazine ([Article](https://analyticsindiamag.com/explainable-ais-disagreement-problem/))
 
 - Python and R packages for Interactive Visualization of Spatial Single-Cell Omics Data \
 Mark Keller, Trevor Manz, **Tessa Han**, Ilan Gold, Chuck McCallum, and Nils Gehlenborg \
