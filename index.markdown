@@ -6,6 +6,6 @@ layout: profile
 title: About
 ---
 
-I am a PhD candidate at Harvard University in [Prof. Hima Lakkaraju](https://himalakkaraju.github.io/)’s lab working on trustworthy machine learning for medicine. I completed my undergraduate degree in Statistics and Molecular and Cellular Biology at Harvard University. 
+I am a PhD candidate at Harvard University in [Prof. Hima Lakkaraju](https://himalakkaraju.github.io/)\’s lab working on trustworthy machine learning for medicine. I completed my undergraduate degree in Statistics and Molecular and Cellular Biology at Harvard University. 
 
 My research interests include explainable, fair, and robust machine learning, uncertainty quantification, and their applications to medicine.
