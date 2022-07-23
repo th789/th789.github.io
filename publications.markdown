@@ -10,6 +10,7 @@ order: 1
 - Which Explanation Should I Choose? A Function Approximation Perspective to Characterizing Post Hoc Explanations \
 **Tessa Han**, Suraj Srinivas, and Himabindu Lakkaraju \
 ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022 \
+In submission to Neural Information Processing Systems (NeurIPS), 2022 \
 \>\> Oral Spotlight Presentation \
 \>\> Best Paper Award 
 
@@ -18,6 +19,7 @@ ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022 \
 Satyapriya Krishna\*, **Tessa Han**\*, Alex Gu, Javin Pombra, Shahin Jabbari, Steven Wu, and Himabindu Lakkaraju (\*equal contribution) \
 ACM CHI Workshop on Trust and Reliance in AI-Human Teams (TRAIT), 2022 \
 ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022 \
+In submission to Nature Machine Learning, 2022 \
 \>\> Oral Spotlight Presentation \
 \>\> Featured on Fortune ([Article 1](https://fortune.com/2022/02/08/learning-to-code-deepmind-alphacode/) and [Article 2](https://fortune.com/2022/03/22/ai-explainable-radiology-medicine-crisis-eye-on-ai/)) \
 \>\> Featured on Analytics India Magazine ([Article](https://analyticsindiamag.com/explainable-ais-disagreement-problem/))
