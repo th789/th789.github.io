@@ -10,7 +10,9 @@ order: 1
 - Which Explanation Should I Choose? A Function Approximation Perspective to Characterizing Post Hoc Explanations \
 **Tessa Han**, Suraj Srinivas, and Himabindu Lakkaraju \
 ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022 \
-\>\> Oral Spotlight Presentation
+\>\> Oral Spotlight Presentation \
+\>\> Best Paper Award \
+
 
 - The Disagreement Problem in Explainable Machine Learning: A Practitioner’s Perspective \
 Satyapriya Krishna\*, **Tessa Han**\*, Alex Gu, Javin Pombra, Shahin Jabbari, Steven Wu, and Himabindu Lakkaraju (\*equal contribution) \
