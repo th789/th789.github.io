@@ -9,8 +9,8 @@ order: 1
 
 - Which Explanation Should I Choose? A Function Approximation Perspective to Characterizing Post Hoc Explanations \
 **Tessa Han**, Suraj Srinivas, and Himabindu Lakkaraju \
+Neural Information Processing Systems (NeurIPS), 2022 \
 ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022 \
-In submission to Neural Information Processing Systems (NeurIPS), 2022 \
 \>\> Oral Spotlight Presentation, IMLH \
 \>\> Best Paper Award, IMLH 
 
