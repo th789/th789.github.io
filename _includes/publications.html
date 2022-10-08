@@ -1,42 +1,57 @@
+
 <ul>
 {% for paper in site.data.pubs.papers %}
 <li>
  <p>
     {{ paper.title }} <br>
     {% for author in paper.authors %}
-      {% if author == "S. Srinivas" %} 
-      <b> {{ author }}</b>,
-      {% else %} {{ author }}, {% endif %}
-      {% endfor %} {{ paper.lastauthor }}<br>
+      {% if author == "Tessa Han" or author == "Tessa Han*" %} 
+        <u> {{ author }}</u>,    
+        {% else %} {{ author }}, 
+        {% endif %}
+      {% endfor %} and {{ paper.lastauthor }}<br>
     <i>{{ paper.journal }}</i>, {{ paper.year }} <br>
 
-<a href="{{ paper.url | escape}}">pdf </a>
+<a class="collapsible"> synopsis</a>
+<span class="content">
+{{ paper.synopsis }}
+</span>
 
-{% if paper.presentation %}
-/ <a href="{{paper.presentation | escape}}"> slides </a>
+ / <a href="{{ paper.link | escape}}"> publication</a>
+
+{% if paper.code %}
+ / <a href="{{paper.code | escape}}"> code</a>
 {% endif %}
+
+{% if paper.workshop %}
+ / <a href="{{paper.workshop | escape}}"> workshop version </a>
+{% endif %}
+
+<!-- vitessce paper -->
+{% if paper.codespecial1 %} <br>
+Tools: <a href="http://vitessce.io/"> Vitessce</a> + <a href="https://github.com/vitessce/vitessce"> code</a> / <a href="https://vitessce.github.io/vitessce-python/"> Python package</a> + <a href="https://github.com/vitessce/vitessce-python"> code</a> / <a href="https://vitessce.github.io/vitessceR/"> R package</a> + <a href="https://github.com/vitessce/vitessceR/"> code</a> / <a href="https://gehlenborglab.shinyapps.io/vitessce-shiny/"> R Shiny</a> + <a href="https://github.com/th789/vitessce-shiny"> code</a>
+{% endif %}
+
+{% if paper.notes %} <br>
+{% for note in paper.notes %}
+  >> {{ note }} <br>
+  {% endfor %}
+{% endif %}
+
+
+<!-- disagreement paper -->
+{% if paper.notesspecial1 %} <br>
+>> Oral Spotlight Presentation, ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022 <br>
+>> Presentation, ACM CHI Workshop on Trust and Reliance in AI-Human Teams (TRAIT), 2022 <br>
+>> Featured in Fortune (<a href="https://fortune.com/2022/02/08/learning-to-code-deepmind-alphacode/">Article 1</a> and <a href="https://fortune.com/2022/03/22/ai-explainable-radiology-medicine-crisis-eye-on-ai/">Article 2</a>) <br>
+>> Featured in Analytics India Magazine (<a href="https://analyticsindiamag.com/explainable-ais-disagreement-problem/">Article</a>) <br>
+{% endif %}
+
 
 {% if paper.poster %}
 / <a href="{{paper.poster | escape}}"> poster </a>
 {% endif %}
 
-{% if paper.code %}
-/<a href="{{paper.code | escape}}"> code </a>
-{% endif %}
-
-{% if paper.workshop %}
-/<a href="{{paper.workshop | escape}}"> workshop version </a>
-{% endif %}
-
-<a class="collapsible">/ tldr</a>
-<span class="content">
-{{ paper.tldr }}
-</span>
-
-{% if paper.notes %} <br>
-<mark style="font-size:90%; padding:0px; margin:0px">{{ paper.notes }}</mark>
-{% endif %}
-<br>
 
 </p>
 </li>
