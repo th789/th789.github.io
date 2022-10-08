@@ -49,4 +49,4 @@ Mehmet Kemal Samur, Anil Aktas Samur, **Tessa Han**, Marco Roncador, Mariateresa
 - Applying Mediation Analysis to Predict Feed Forward Loops as Gene Regulatory Networks in Multiple Myeloma – A Novel Statistical Approach \
 Honors thesis for a joint A.B. degree in Statistics and Molecular and Cellular Biology \
 Supervisor: Prof. Giovanni Parmigiani (Harvard University) \
-\>\> Hoopes Prize for "outstanding scholarly work or research", Harvard University
+\>\> Hoopes Prize for "outstanding scholarly work or research", Harvard University, 2020
