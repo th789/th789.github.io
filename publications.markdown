@@ -37,8 +37,12 @@ Journal of Clinical Oncology, 2020
 Blood (Supplemental Issue), 2019 \
 \>\> Abstract Achievement Award, American Society of Hematology
 
+- The Landscape of Genome Wide Somatic Alterations Identifies a Good-Risk Group in Newly-Diagnosed Multiple Myeloma \
+Mehmet Kemal Samur, Anil Aktas Samur, **Tessa Han**, Marco Roncador, Mariateresa Fulciniti, Raphael Szalat, Masood A. Shammas, Jill Corre, Paul G. Richardson, Florence Magrangeas, Stephane Minvielle, Philippe Moreau, Michel Attal, Anjan Thakurta, Kenneth C. Anderson, Giovanni Parmigiani, Herve Avet-Loiseau, and Nikhil C. Munshi \
+Blood (Supplemental Issue), 2019 \
 
-## Theses
+
+## Thesis
 
 - Applying Mediation Analysis to Predict Feed Forward Loops as Gene Regulatory Networks in Multiple Myeloma – A Novel Statistical Approach \
 Honors thesis for a joint A.B. degree in Statistics and Molecular and Cellular Biology \
