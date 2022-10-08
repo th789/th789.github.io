@@ -3,7 +3,7 @@
 {% for paper in site.data.pubs.papers %}
 <li>
  <p>
-    {{ paper.title }} <br>
+    <b>{{ paper.title }}</b> <br>
     {% for author in paper.authors %}
       {% if author == "Tessa Han" or author == "Tessa Han*" %} 
         <u> {{ author }}</u>,    
