@@ -40,7 +40,7 @@ papers:
     lastauthor: Nils Gehlenborg
     journal: Conference on Intelligent Systems for Molecular Biology and European Conference on Computational Biology (ISMB/ECCB)
     year: 2021
-    synopsis: How do we effectively integrate and visualize high-dimensional, multimodal, spatial data in single-cell genomics? Here, to enable these visualizations, we develop Vitessce (Visual integration tool for exploration of spatial single cell experiments), a web-based, interactive visualization tool. We also develop associated Python packages and RStudio and RShiny widgets to enable using Vitessce within the Python and R bioinformatics ecosystems.
+    synopsis: How do we effectively integrate and visualize high-dimensional, multimodal, spatial data in single-cell genomics? Here, to enable these visualizations, we develop Vitessce (Visual integration tool for exploration of spatial single cell experiments), a web-based, interactive visualization tool. We also develop associated Python, R/RStudio, and RShiny tools to enable using Vitessce within the Python and R bioinformatics ecosystems.
     link: https://www.youtube.com/watch?v=xsb-zz8JrVU
     codespecial1: see 'publications.html'
 
