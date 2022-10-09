@@ -3,10 +3,10 @@
 {% for paper in site.data.pubs.papers %}
 <li>
  <p>
-    <b>{{ paper.title }}</b> <br>
+    {{ paper.title }} <br>
     {% for author in paper.authors %}
-      {% if author == "Tessa Han" or author == "Tessa Han*" %} 
-        <u> {{ author }}</u>,    
+      {% if author == "Tessa Han" %} 
+        <b> {{ author }}</b>,    
         {% else %} {{ author }}, 
         {% endif %}
       {% endfor %} and {{ paper.lastauthor }}<br>
@@ -23,8 +23,17 @@
  / <a href="{{paper.code | escape}}"> code</a>
 {% endif %}
 
+<!-- {% if paper.codetobereleased %}
+ / code to be released
+{% endif %}
+
+{% if paper.codeprotected %}
+ / code not public due to protected patient data
+{% endif %} -->
+
 {% if paper.workshop %}
- / <a href="{{paper.workshop | escape}}"> workshop version </a>
+<!-- uncomment to show workshop link -->
+ <!-- / <a href="{{paper.workshop | escape}}"> workshop version </a> -->
 {% endif %}
 
 <!-- vitessce paper -->
