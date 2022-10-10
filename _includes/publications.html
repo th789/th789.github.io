@@ -10,7 +10,10 @@
         {% else %} {{ author }}, 
         {% endif %}
       {% endfor %} and {{ paper.lastauthor }}<br>
-    <i>{{ paper.journal }}</i>, {{ paper.year }} <br>
+    {% if paper.journal == "In submission for publication" %}
+      <i>{{ paper.journal }}</i> <br>
+      {% else %} <i>{{ paper.journal }}</i>, {{ paper.year }} <br>
+      {% endif %}
 
 <a class="collapsible"> synopsis</a>
 <span class="content">
@@ -23,13 +26,7 @@
  / <a href="{{paper.code | escape}}"> code</a>
 {% endif %}
 
-<!-- {% if paper.codetobereleased %}
- / code to be released
-{% endif %}
 
-{% if paper.codeprotected %}
- / code not public due to protected patient data
-{% endif %} -->
 
 {% if paper.workshop %}
 <!-- uncomment to show workshop link -->

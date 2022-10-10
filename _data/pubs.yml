@@ -12,9 +12,9 @@ papers:
     workshop: https://icml.cc/virtual/2022/workshop/13449
     notes: 
     - Oral Spotlight Presentation, ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022
-    - Best Paper Award, IMLH, 2022
+    - Best Paper Award, ICML IMLH Workshop, 2022
 
-  - title: The Disagreement Problem in Explainable Machine Learning - A Practitioner’s Perspective
+  - title: The Disagreement Problem in Explainable Machine Learning -- A Practitioner’s Perspective
     authors:
     - Satyapriya Krishna*
     - <b>Tessa Han</b>*
@@ -27,7 +27,6 @@ papers:
     year: 2022
     synopsis: To what extent do explanations from post hoc explanation methods agree and how are disagreeing explanations handled in practice? Here, we introduce and systematically study the “disagreement problem” in explainable machine learning. We find that existing explanation methods often generate disagreeing explanations and practitioners do not have a principled approach to selecting among disagreement explanations.
     link: https://arxiv.org/abs/2202.01602
-    codetobereleased: 
     workshop: https://chi-trait.github.io/#/schedule
     notesspecial1: see 'publications.html'
 
@@ -67,7 +66,6 @@ papers:
     year: 2020
     synopsis: What is the genomic landscape of multiple myeloma and what are the genomic markers associated long-term survival? Here, we characterize the genomic landscape of multiple myeloma using deep whole-genome sequencing data. We find mutational signatures that reveal mechanisms of progression and variability in mutational load among known subgroups. In addition, we identify a new, genomically-defined subgroup (characterized by lower mutational load, age-related mutations, and the NRAS mutation) with prolonged overall and progression-free survival.
     link: https://ascopubs.org/doi/full/10.1200/JCO.20.00461
-    codeprotected:
 
 
   - title: Dysregulated miRNAs after Uniform Treatment Predict Outcome of Newly-Diagnosed Multiple Myeloma
@@ -89,7 +87,6 @@ papers:
     year: 2019
     synopsis: What is the role of miRNAs in the prognosis and progression of multiple myeloma? Here, we find that dysregulated miRNAs are predictive of disease prognosis in newly-diagnosed multiple myeloma patients and may contribute to disease progression by targeting key multiple myeloma genes (including MAF, BCL2, 14-3-3 and MYEOV).
     link: https://ashpublications.org/blood/article/134/Supplement_1/4348/424591/Dysregulated-Mirnas-after-Uniform-Treatment
-    codeprotected:
     notes:
     - Abstract Achievement Award, American Society of Hematology, 2019
 
@@ -117,5 +114,4 @@ papers:
     year: 2019
     synopsis: At the genomic level, what distinguishes low-risk (long-survival) multiple myeloma patients from high-risk (short-survival) multiple myeloma patients? Here, we analyze whole-genome and whole-transcriptome sequencing data from multiple myeloma patients and identify a new low-risk subgroup in which chromosome and telomere maintenance pathways and genes associated with low bone disease are upregulated, processes associated with DNA damage are downregulated, and there are lower mutation rates for known oncogenes and tumor suppressors (e.g. TP53, CSMD1, and FAT3/FAT4).
     link: https://ashpublications.org/blood/article/134/Supplement_1/3055/423505/The-Landscape-of-Genome-Wide-Somatic-Alterations
-    codeprotected: 
 

@@ -5,7 +5,8 @@ permalink: /research
 order: 1
 ---
 
-## Publications
+<!-- ## Publications -->
+<h2 style="font-weight:300">Publications</h2>
 
 {% include publications.html %}
 
@@ -44,7 +45,8 @@ Mehmet Kemal Samur, Anil Aktas Samur, **Tessa Han**, Marco Roncador, Mariateresa
 *Blood* (Supplemental Issue), 2019 -->
 
 
-## Thesis
+<!-- ## Thesis -->
+<h2 style="font-weight:300">Thesis</h2>
 
 - Applying Mediation Analysis to Predict Feed Forward Loops as Gene Regulatory Networks in Multiple Myeloma – A Novel Statistical Approach \
 Honors thesis for a joint A.B. degree in Statistics and Molecular and Cellular Biology \
