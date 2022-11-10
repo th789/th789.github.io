@@ -22,7 +22,7 @@ papers:
     - Javin Pombra
     - Shahin Jabbari
     - Steven Wu
-    lastauthor: Hima Lakkaraju
+    lastauthor: Hima Lakkaraju (*equal contribution)
     journal: In submission for publication
     year: 2022
     synopsis: To what extent do explanations from post hoc explanation methods agree and how are disagreeing explanations handled in practice? Here, we introduce and systematically study the “disagreement problem” in explainable machine learning. We find that existing explanation methods often generate disagreeing explanations and practitioners do not have a principled approach to selecting among disagreement explanations.
