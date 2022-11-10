@@ -3,16 +3,26 @@ layout: default
 ---
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"  integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
 
 <div class="columns">
   <div class="column-1">
     <img src="profile.jpeg" class="profile-picture" width=80%></img>
 
     <br>
-    <a href="mailto:than@g.harvard.edu" class="fa fa-envelope"></a>  
+    <!-- old icons -->
+    <!-- <a href="mailto:than@g.harvard.edu" class="fa fa-envelope"></a>  
     <a href="https://scholar.google.com/citations?user=exlT558AAAAJ&hl=en" class="fa fa-graduation-cap"></a> 
     <a href="https://github.com/th789" class="fa fa-github"></a> 
-    <a href="https://www.linkedin.com/in/tessahan" class="fa fa-linkedin"></a> 
+    <a href="https://www.linkedin.com/in/tessahan" class="fa fa-linkedin"></a>  -->
+
+    &nbsp; &nbsp;
+    <a href="mailto:than@g.harvard.edu"><i class="fas fa-envelope"></i></a>
+    <a href="https://scholar.google.com/citations?user=exlT558AAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+    <a href="https://github.com/th789" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/tessahan" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    
     <br>
     
     <!-- <a href="pdfs/resume.pdf" class="block"> -->
@@ -20,8 +30,15 @@ layout: default
     <!-- </a> -->
 
   </div>
+
   <div class="column-2">
       {{ content }}
+      
+      <!-- <a href="mailto:than@g.harvard.edu"><i class="fas fa-envelope"></i></a>
+      <a href="https://scholar.google.com/citations?user=exlT558AAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+      <a href="https://github.com/th789" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/tessahan" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a> -->
+
   </div>
 
 </div>
@@ -53,7 +70,14 @@ img{
   color: white;
 }
 
-.fa {
+.ai, .fab, .fas {
+  font-size: 1.6em;
+  text-align: center;
+  padding: 5% 1%;
+}
+
+/* old icons */
+/* .fa {
   padding: 4% 6%;
   font-size: 20px;
   width: 2%;
@@ -65,7 +89,7 @@ img{
 .fa:hover {
     opacity: 0.3;
     text-decoration: none;
-}
+} */
 
 .columns{
   Width: 100%;
