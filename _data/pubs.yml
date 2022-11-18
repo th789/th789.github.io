@@ -11,8 +11,8 @@ papers:
     code: https://github.com/AI4LIFE-GROUP/lfa 
     workshop: https://icml.cc/virtual/2022/workshop/13449
     notes: 
-    - Oral Spotlight Presentation, ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022
-    - Best Paper Award, ICML IMLH Workshop, 2022
+    - Best Paper Award, ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022
+    - Oral Spotlight Presentation, ICML IMLH Workshop, 2022
 
   - title: The Disagreement Problem in Explainable Machine Learning -- A Practitioner’s Perspective
     authors:
