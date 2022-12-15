@@ -20,11 +20,17 @@
 {{ paper.synopsis }}
 </span>
 
- / <a href="{{ paper.link | escape}}"> publication</a>
+{% if paper.link %}
+  / <a href="{{ paper.link | escape}}"> publication</a>
+  {% endif %}
+
+{% if paper.linkabstract %}
+  / <a href="{{ paper.linkabstract | escape}}"> publication (abstract)</a>
+  {% endif %}
 
 {% if paper.code %}
- / <a href="{{paper.code | escape}}"> code</a>
-{% endif %}
+  / <a href="{{paper.code | escape}}"> code</a>
+  {% endif %}
 
 
 
