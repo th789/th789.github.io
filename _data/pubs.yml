@@ -1,4 +1,32 @@
 papers:
+  - title: Efficient Estimation of Average-Case Robustness for Multi-Class Classification
+    authors:
+    - Tessa Han*
+    - Suraj Srinivas*
+    lastauthor: Hima Lakkaraju
+    journal: In submission
+    year: 2023
+    synopsis: How do we efficiently estimate the average-case robustness of a model? Here, we 1) derive efficient analytical estimators, 2) validate their accuracy and efficiency through theoretical and empirical analyses, and 3) demonstrate their usefulness for various tasks involving average-case robustness (e.g., measuring class-level robustness bias and identifying dataset samples that are vulnerable to noise perturbation).
+    link: https://arxiv.org/abs/2307.13885
+    notes: 
+    - ICML Workshop on Formal Verification of Machine Learning (WFVML), 2023
+    - ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2023
+
+  - title: Is Ignorance Bliss? Investigating How Faithfulness and Alignment of Post Hoc Explanations Affect Model Trust in Laypeople and Domain Experts
+    authors:
+    - Tessa Han*
+    - Yasha Ektefaie*
+    - Maha Farhat
+    - Marinka Zitnik
+    lastauthor: Hima Lakkaraju
+    journal: Working paper
+    year: 2023
+    synopsis: What factors affect laypeople and domain experts' trust in post hoc explanations? Here, we find that while laypeople base their trust on explanation faithfulness, domain experts (incorrectly) base theirs on explanation alignment, suggesting a cognitive bias among domain experts.
+    link: https://arxiv.org/abs/2312.5284974
+    notes: 
+    - Machine Learning for Health Symposium, 2023
+    - Global Symposium on Artificial Intelligence in Dentistry, 2023
+
   - title: Which Explanation Should I Choose? A Function Approximation Perspective to Characterizing Post Hoc Explanations
     authors:
     - Tessa Han
@@ -17,13 +45,13 @@ papers:
   - title: The Disagreement Problem in Explainable Machine Learning -- A Practitioner’s Perspective
     authors:
     - Satyapriya Krishna*
-    - <b>Tessa Han</b>*
+    - Tessa Han*
     - Alex Gu
     - Javin Pombra
     - Shahin Jabbari
     - Steven Wu
     lastauthor: Hima Lakkaraju (*equal contribution)
-    journal: In submission for publication
+    journal: In submission
     year: 2022
     synopsis: To what extent do explanations from post hoc explanation methods agree and how are disagreeing explanations resolved in practice? Here, we introduce and systematically study the “disagreement problem” in explainable machine learning. We find that existing explanation methods often generate disagreeing explanations and practitioners do not have a principled approach to selecting among disagreeing explanations, resorting to ad hoc heuristics such as personal preference.
     link: https://arxiv.org/abs/2202.01602

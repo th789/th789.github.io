@@ -5,12 +5,12 @@
  <p>
     {{ paper.title }} <br>
     {% for author in paper.authors %}
-      {% if author == "Tessa Han" %} 
+      {% if author == "Tessa Han" or author == "Tessa Han*" %} 
         <b> {{ author }}</b>,    
         {% else %} {{ author }}, 
         {% endif %}
       {% endfor %} and {{ paper.lastauthor }}<br>
-    {% if paper.journal == "In submission for publication" %}
+    {% if paper.journal == "In submission" or paper.journal == "Working paper" %}
       <i>{{ paper.journal }}</i> <br>
       {% else %} <i>{{ paper.journal }}</i>, {{ paper.year }} <br>
       {% endif %}
