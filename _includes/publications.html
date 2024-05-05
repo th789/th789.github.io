@@ -10,7 +10,7 @@
         {% else %} {{ author }}, 
         {% endif %}
       {% endfor %} and {{ paper.lastauthor }}<br>
-    {% if paper.journal == "In submission" or paper.journal == "Working paper" %}
+    {% if paper.journal == "Under review" or paper.journal == "Working paper" %}
       <i>{{ paper.journal }}</i> <br>
       {% else %} <i>{{ paper.journal }}</i>, {{ paper.year }} <br>
       {% endif %}
@@ -21,11 +21,11 @@
 </span>
 
 {% if paper.link %}
-  / <a href="{{ paper.link | escape}}"> publication</a>
+  / <a href="{{ paper.link | escape}}"> paper</a>
   {% endif %}
 
 {% if paper.linkabstract %}
-  / <a href="{{ paper.linkabstract | escape}}"> publication (abstract)</a>
+  / <a href="{{ paper.linkabstract | escape}}"> paper (abstract)</a>
   {% endif %}
 
 {% if paper.code %}

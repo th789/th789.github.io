@@ -1,13 +1,25 @@
 papers:
+  - title: Towards Safe Large Language Models for Medicine
+    authors:
+    - Tessa Han
+    - Aounon Kumar
+    - Chirag Agarwal
+    lastauthor: Hima Lakkaraju
+    journal: Under review
+    year: 2024
+    synopsis: How do we evaluate and improve the safety of large language models (LLMs) for medicine? In this paper, we find that 1) current medical LLMs do not meet standards of general or medical safety and that 2) fine-tuning medical LLMs on safety demonstrations significantly improves their safety. Along the way, we present a definition of medical safety for LLMs and develop a benchmark dataset to evaluate and train for medical safety in LLMs.
+    link: https://arxiv.org/abs/2403.03744
+
   - title: Efficient Estimation of Average-Case Robustness for Multi-Class Classification
     authors:
     - Tessa Han*
     - Suraj Srinivas*
     lastauthor: Hima Lakkaraju
-    journal: In submission
-    year: 2023
-    synopsis: How do we efficiently estimate the average-case robustness of a model? Here, we 1) derive efficient analytical estimators, 2) validate their accuracy and efficiency through theoretical and empirical analyses, and 3) demonstrate their usefulness for various tasks involving average-case robustness (e.g., measuring class-level robustness bias and identifying dataset samples that are vulnerable to noise perturbation).
+    journal: Conference on Uncertainty in Artificial Intelligence (UAI)
+    year: 2024
+    synopsis: How do we efficiently estimate the average-case robustness of a model? In this paper, we 1) derive efficient analytical estimators, 2) validate their accuracy and efficiency through theoretical and empirical analyses, and 3) demonstrate their usefulness for various tasks involving average-case robustness (e.g., measuring class-level robustness bias and identifying dataset samples that are vulnerable to noise perturbation).
     link: https://arxiv.org/abs/2307.13885
+    code: https://github.com/AI4LIFE-GROUP/average-case-robustness
     notes: 
     - ICML Workshop on Formal Verification of Machine Learning (WFVML), 2023
     - ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2023
@@ -19,12 +31,11 @@ papers:
     - Maha Farhat
     - Marinka Zitnik
     lastauthor: Hima Lakkaraju
-    journal: Working paper
+    journal: Machine Learning for Health Symposium (ML4H)
     year: 2023
-    synopsis: What factors affect laypeople and domain experts' trust in post hoc explanations? Here, we find that while laypeople base their trust on explanation faithfulness, domain experts (incorrectly) base theirs on explanation alignment, suggesting a cognitive bias among domain experts.
+    synopsis: What factors affect laypeople and domain experts' trust in post hoc explanations? In this paper, we find that while laypeople base their trust on explanation faithfulness, domain experts (incorrectly) base theirs on explanation alignment, suggesting a cognitive bias among domain experts.
     link: https://arxiv.org/abs/2312.05690
     notes: 
-    - Machine Learning for Health Symposium, 2023
     - Global Symposium on Artificial Intelligence in Dentistry, 2023
 
   - title: Which Explanation Should I Choose? A Function Approximation Perspective to Characterizing Post Hoc Explanations
@@ -32,9 +43,9 @@ papers:
     - Tessa Han
     - Suraj Srinivas
     lastauthor: Hima Lakkaraju
-    journal: Neural Information Processing Systems (NeurIPS)
+    journal: Conference on Neural Information Processing Systems (NeurIPS)
     year: 2022
-    synopsis: What are the basic properties of post hoc explanation methods and when is each method effective? Here, we 1) formalize the local function approximation framework, unifying eight diverse, popular explanation methods; 2) demonstrate that no method can perform optimally in every situation via the no free lunch theorem, calling for a principled approach to selecting among methods; and 3) set forth a guiding principle based on faithful function approximation to guide the selection among existing explanation methods and the design of novel ones.
+    synopsis: What are the basic properties of post hoc explanation methods and when is each method effective? In this paper, we 1) formalize the local function approximation framework, unifying eight diverse, popular explanation methods; 2) demonstrate that no method can perform optimally in every situation via the no free lunch theorem, calling for a principled approach to selecting among methods; and 3) set forth a guiding principle based on faithful function approximation to guide the selection among existing explanation methods and the design of novel ones.
     link: https://arxiv.org/abs/2206.01254
     code: https://github.com/AI4LIFE-GROUP/lfa 
     workshop: https://icml.cc/virtual/2022/workshop/13449
@@ -51,9 +62,9 @@ papers:
     - Shahin Jabbari
     - Steven Wu
     lastauthor: Hima Lakkaraju (*equal contribution)
-    journal: In submission
+    journal: Under review
     year: 2022
-    synopsis: To what extent do explanations from post hoc explanation methods agree and how are disagreeing explanations resolved in practice? Here, we introduce and systematically study the “disagreement problem” in explainable machine learning. We find that existing explanation methods often generate disagreeing explanations and practitioners do not have a principled approach to selecting among disagreeing explanations, resorting to ad hoc heuristics such as personal preference.
+    synopsis: To what extent do explanations from post hoc explanation methods agree and how are disagreeing explanations resolved in practice? In this paper, we introduce and systematically study the “disagreement problem” in explainable machine learning. We find that 1) existing explanation methods often generate disagreeing explanations and 2) practitioners do not have a principled approach to selecting among disagreeing explanations, resorting to ad hoc heuristics such as personal preference.
     link: https://arxiv.org/abs/2202.01602
     workshop: https://chi-trait.github.io/#/schedule
     notesspecial1: see 'publications.html'
@@ -68,7 +79,7 @@ papers:
     lastauthor: Nils Gehlenborg
     journal: Conference on Intelligent Systems for Molecular Biology and European Conference on Computational Biology (ISMB/ECCB)
     year: 2021
-    synopsis: How do we effectively integrate and visualize high-dimensional, multimodal, spatial data in single-cell genomics? Here, to enable these visualizations, we develop Vitessce (Visual integration tool for exploration of spatial single cell experiments), a web-based, interactive visualization tool. We also develop associated Python, R/RStudio, and RShiny tools to enable using Vitessce within the Python and R bioinformatics ecosystems.
+    synopsis: How do we effectively integrate and visualize high-dimensional, multimodal, spatial data in single-cell genomics? In this paper, to enable these visualizations, we develop Vitessce (Visual integration tool for exploration of spatial single cell experiments), a web-based, interactive visualization tool. We also develop associated Python, R/RStudio, and RShiny tools to enable using Vitessce within the Python and R bioinformatics ecosystems.
     link: https://www.youtube.com/watch?v=xsb-zz8JrVU
     codespecial1: see 'publications.html'
 
@@ -92,7 +103,7 @@ papers:
     lastauthor: Nikhil Munshi
     journal: Journal of Clinical Oncology
     year: 2020
-    synopsis: What is the genomic landscape of multiple myeloma and what are the genomic markers associated long-term survival? Here, we characterize the genomic landscape of multiple myeloma using deep whole-genome sequencing data. We find mutational signatures that reveal mechanisms of progression and variability in mutational load among known subgroups. In addition, we identify a new, genomically-defined subgroup (characterized by lower mutational load, age-related mutations, and the NRAS mutation) with prolonged overall and progression-free survival.
+    synopsis: What is the genomic landscape of multiple myeloma and what are the genomic markers associated long-term survival? In this paper, we characterize the genomic landscape of multiple myeloma using deep whole-genome sequencing data. We find mutational signatures that reveal mechanisms of progression and variability in mutational load among known subgroups. In addition, we identify a new, genomically-defined subgroup (characterized by lower mutational load, age-related mutations, and the NRAS mutation) with prolonged overall and progression-free survival.
     link: https://ascopubs.org/doi/full/10.1200/JCO.20.00461
 
 
