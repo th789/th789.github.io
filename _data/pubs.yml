@@ -17,7 +17,7 @@ papers:
     lastauthor: Hima Lakkaraju
     journal: Conference on Uncertainty in Artificial Intelligence (UAI)
     year: 2024
-    synopsis: How do we efficiently characterize a data point's vulnerability to noise using average-case robustness? In this paper, we 1) derive efficient analytical estimators, 2) validate their accuracy and efficiency through theoretical and empirical analyses, and 3) demonstrate their usefulness for various tasks involving average-case robustness (e.g., measuring class-level robustness bias and identifying dataset samples that are vulnerable to noise perturbation).
+    synopsis: How do we efficiently characterize a data point's vulnerability using average-case robustness? In this paper, we 1) derive efficient analytical estimators, 2) validate their accuracy and efficiency through theoretical and empirical analyses, and 3) demonstrate their usefulness for various tasks involving average-case robustness (e.g., measuring class-level robustness bias and identifying dataset samples that are vulnerable to noise perturbation).
     link: https://arxiv.org/abs/2307.13885
     code: https://github.com/AI4LIFE-GROUP/average-case-robustness
     notes: 
