@@ -10,14 +10,14 @@ papers:
     synopsis: How do we evaluate and improve the safety of large language models (LLMs) for medicine? In this paper, we find that 1) current medical LLMs do not meet standards of general or medical safety and that 2) fine-tuning medical LLMs on safety demonstrations significantly improves their safety. Along the way, we present a definition of medical safety for LLMs and develop a benchmark dataset to evaluate and train for medical safety in LLMs.
     link: https://arxiv.org/abs/2403.03744
 
-  - title: Efficient Estimation of Average-Case Robustness for Multi-Class Classification
+  - title: Characterizing Data Point Vulnerability via Average-Case Robustness
     authors:
     - Tessa Han*
     - Suraj Srinivas*
     lastauthor: Hima Lakkaraju
     journal: Conference on Uncertainty in Artificial Intelligence (UAI)
     year: 2024
-    synopsis: How do we efficiently estimate the average-case robustness of a model? In this paper, we 1) derive efficient analytical estimators, 2) validate their accuracy and efficiency through theoretical and empirical analyses, and 3) demonstrate their usefulness for various tasks involving average-case robustness (e.g., measuring class-level robustness bias and identifying dataset samples that are vulnerable to noise perturbation).
+    synopsis: How do we efficiently characterize a data point's vulnerability to noise using average-case robustness? In this paper, we 1) derive efficient analytical estimators, 2) validate their accuracy and efficiency through theoretical and empirical analyses, and 3) demonstrate their usefulness for various tasks involving average-case robustness (e.g., measuring class-level robustness bias and identifying dataset samples that are vulnerable to noise perturbation).
     link: https://arxiv.org/abs/2307.13885
     code: https://github.com/AI4LIFE-GROUP/average-case-robustness
     notes: 
