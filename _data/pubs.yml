@@ -1,14 +1,19 @@
 papers:
-  - title: Towards Safe Large Language Models for Medicine
+  - title: MedSafetyBench -- Evaluating and Improving the Medical Safety of Large Language Models
     authors:
     - Tessa Han
     - Aounon Kumar
     - Chirag Agarwal
     lastauthor: Hima Lakkaraju
-    journal: Under review
+    journal: Working paper
     year: 2024
     synopsis: How do we evaluate and improve the safety of large language models (LLMs) for medicine? In this paper, we find that 1) current medical LLMs do not meet standards of general or medical safety and that 2) fine-tuning medical LLMs on safety demonstrations significantly improves their safety. Along the way, we present a definition of medical safety for LLMs and develop a benchmark dataset to evaluate and train for medical safety in LLMs.
     link: https://arxiv.org/abs/2403.03744
+    notes:
+    - ICML Workshop on Models of Human Feedback for AI Alignment, 2024
+    - ICML Workshop on Humans, Algorithmic Decision-Making, and Society, 2024
+    - ICML Workshop on Foundation Models in the Wild, 2024
+    - ICML Workshop on Next Generation of AI Safety, 2024
 
   - title: Characterizing Data Point Vulnerability via Average-Case Robustness
     authors:
@@ -61,9 +66,9 @@ papers:
     - Javin Pombra
     - Shahin Jabbari
     - Steven Wu
-    lastauthor: Hima Lakkaraju (*equal contribution)
-    journal: Under review
-    year: 2022
+    lastauthor: Hima Lakkaraju
+    journal: Transactions on Machine Learning Research (TMLR)
+    year: 2024
     synopsis: To what extent do explanations from post hoc explanation methods agree and how are disagreeing explanations resolved in practice? In this paper, we introduce and systematically study the “disagreement problem” in explainable machine learning. We find that 1) existing explanation methods often generate disagreeing explanations and 2) practitioners do not have a principled approach to selecting among disagreeing explanations, resorting to ad hoc heuristics such as personal preference.
     link: https://arxiv.org/abs/2202.01602
     workshop: https://chi-trait.github.io/#/schedule
@@ -129,7 +134,7 @@ papers:
     notes:
     - Abstract Achievement Award, American Society of Hematology, 2019
 
-  - title: The Landscape of Genome Wide Somatic Alterations Identifies a Good-Risk Group in Newly-Diagnosed Multiple Myeloma
+  - title: The Landscape of Genome-Wide Somatic Alterations Identifies a Good-Risk Group in Newly-Diagnosed Multiple Myeloma
     authors:
     - Mehmet Kemal Samur
     - Anil Aktas Samur
