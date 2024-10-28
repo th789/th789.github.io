@@ -5,8 +5,8 @@ papers:
     - Aounon Kumar
     - Chirag Agarwal
     lastauthor: Hima Lakkaraju
-    journal: Conference on Neural Information Processing Systems (NeurIPS), Datasets and Benchmarks
-    year: 2024
+    journal: Conference on Neural Information Processing Systems (NeurIPS)
+    year: 2024, Datasets and Benchmarks
     synopsis: How do we define, evaluate, and improve the medical safety of large language models (LLMs)? In this paper, we define the notion of medical safety for LLMs, develop a novel benchmark dataset (MedSafetyBench) to assess it, and evaluate and improve the medical safety of medical LLMs. We find that 1) current medical LLMs do not meet standards of general or medical safety and that 2) fine-tuning these medical LLMs using our benchmark dataset significantly improves their safety.
     link: https://arxiv.org/abs/2403.03744
     notes:
