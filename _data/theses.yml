@@ -1,7 +1,0 @@
-theses:
-  - title: Applying Mediation Analysis to Predict Feed Forward Loops as Gene Regulatory Networks in Multiple Myeloma -- A Novel Statistical Approach
-    description: Honors thesis for a joint A.B. degree in Statistics and Molecular and Cellular Biology, 2020
-    advisor: Prof. Giovanni Parmigiani (Harvard University)
-    synopsis: How do we predict feed forward loops (FFLs), a type of gene regulatory network, using gene and miRNA expression profiles? What do predicted FFLs in multiple myeloma reveal about the biology of the disease? This thesis posits a novel computational method to predict FFLs using mediation analysis. Applying the method to analyzing a multiple myeloma dataset predicts numerous FFLs that involve known oncogenes and tumor suppressors. Upon experimental validation, these findings may lead to the discovery of the first FFLs in multiple myeloma, elucidating the biology that underlies the disease and revealing new disease-level and subgroup-specific treatment strategies for multiple myeloma patients. 
-    notes: 
-    - Hoopes Prize for “outstanding scholarly work or research”, Harvard University, 2020

@@ -1,0 +1,105 @@
+
+<ul>
+{% for paper in site.data.pubs.papers %}
+<li>
+ <p>
+    {{ paper.title }} <br>
+    {% for author in paper.authors %}
+      {% if author == "Tessa Han" or author == "Tessa Han*" %} 
+        <b> {{ author }}</b>,    
+        {% else %} {{ author }}, 
+        {% endif %}
+      {% endfor %} and {{ paper.lastauthor }}<br>
+    {% if paper.journal == "Under review" or paper.journal == "Working paper" %}
+      <i>{{ paper.journal }}</i> <br>
+      {% else %} <i>{{ paper.journal }}</i>, {{ paper.year }} <br>
+      {% endif %}
+
+<a class="collapsible"> summary</a>
+<span class="content">
+{{ paper.summary }}
+</span>
+
+{% if paper.link %}
+  / <a href="{{ paper.link | escape}}"> paper</a>
+  {% endif %}
+
+{% if paper.linkabstract %}
+  / <a href="{{ paper.linkabstract | escape}}"> paper (abstract)</a>
+  {% endif %}
+
+{% if paper.code %}
+  / <a href="{{paper.code | escape}}"> code</a>
+  {% endif %}
+
+{% if paper.dataset %}
+  / <a href="{{paper.dataset | escape}}"> dataset</a>
+  {% endif %}
+
+
+
+{% if paper.workshop %}
+<!-- uncomment to show workshop link -->
+ <!-- / <a href="{{paper.workshop | escape}}"> workshop version </a> -->
+{% endif %}
+
+<!-- vitessce paper -->
+{% if paper.codespecial1 %} <br>
+Tools: <a href="http://vitessce.io/"> Vitessce</a> + <a href="https://github.com/vitessce/vitessce"> code</a> / <a href="https://vitessce.github.io/vitessce-python/"> Python package</a> + <a href="https://github.com/vitessce/vitessce-python"> code</a> / <a href="https://vitessce.github.io/vitessceR/"> R package</a> + <a href="https://github.com/vitessce/vitessceR/"> code</a> / <a href="https://gehlenborglab.shinyapps.io/vitessce-shiny/"> R Shiny</a> + <a href="https://github.com/th789/vitessce-shiny"> code</a>
+{% endif %}
+
+{% if paper.notes %} <br>
+{% for note in paper.notes %}
+  >> {{ note }} <br>
+  {% endfor %}
+{% endif %}
+
+
+<!-- disagreement paper -->
+{% if paper.notesspecial1 %} <br>
+>> Oral Spotlight Presentation, ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022 <br>
+>> Presentation, ACM CHI Workshop on Trust and Reliance in AI-Human Teams (TRAIT), 2022 <br>
+>> Featured in Fortune (<a href="https://fortune.com/2022/02/08/learning-to-code-deepmind-alphacode/">Article 1</a> and <a href="https://fortune.com/2022/03/22/ai-explainable-radiology-medicine-crisis-eye-on-ai/">Article 2</a>) <br>
+>> Featured in Analytics India Magazine (<a href="https://analyticsindiamag.com/explainable-ais-disagreement-problem/">Article</a>) <br>
+{% endif %}
+
+
+{% if paper.poster %}
+/ <a href="{{paper.poster | escape}}"> poster </a>
+{% endif %}
+
+
+</p>
+</li>
+{% endfor %}
+</ul>
+
+<style>
+p{
+  padding-bottom: 10px;
+}
+
+.content {
+  padding: 10px 0px;
+  display: none;
+  overflow: hidden;
+}
+
+</style>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>

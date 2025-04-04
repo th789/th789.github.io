@@ -1,0 +1,200 @@
+<!-- Tab Navigation -->
+<div class="tabs">
+  <ul class="tab-list">
+    <li class="tab-item"><a href="#select-publications" onclick="showTab('select-publications', this); return false">selected publications</a></li>
+    <li class="tab-item"><a href="#all-publications-and-preprints" onclick="showTab('all-publications-and-preprints', this); return false">all publications and preprints</a></li>
+    <li class="tab-item"><a href="#theses" onclick="showTab('theses', this); return false">theses</a></li>
+  </ul>
+</div>
+
+<!-- Tab Content -->
+<div id="select-publications" class="tab-content">
+  <h2 style="font-weight:300"> selected publications</h2>
+  {% for paper in select_papers %}
+    <div class="publication">
+      <h3>{{ paper.title }}</h3>
+      <p>{{ paper.description }}</p>
+    </div>
+  {% endfor %}
+</div>
+
+<div id="all-publications-and-preprints" class="tab-content" style="display: none;">
+  <h2 style="font-weight:300"> all publications and preprints</h2>
+  {% for paper in all_papers %}
+    <div class="publication">
+      <h3>{{ paper.title }}</h3>
+      <p>{{ paper.description }}</p>
+    </div>
+  {% endfor %}
+</div>
+
+<div id="theses" class="tab-content" style="display: none;">
+  <h2 style="font-weight:300"> theses</h2>
+  {% for thesis in theses %}
+    <div class="publication">
+      <h3>{{ thesis.title }}</h3>
+      <p>{{ thesis.description }}</p>
+    </div>
+  {% endfor %}
+</div>
+
+<!-- JavaScript for Tab Switching -->
+<script>
+  function showTab(tabId, element) {
+    // Hide all tab content
+    document.querySelectorAll('.tab-content').forEach(tab => {
+      tab.style.display = 'none';
+    });
+    // Show the selected tab
+    document.getElementById(tabId).style.display = 'block';
+
+    // Remove 'active' class from all tabs
+    document.querySelectorAll('.tab-item a').forEach(tab => {
+      tab.classList.remove('active');
+    });
+    // Add 'active' class to the clicked tab
+    element.classList.add('active');
+  }
+
+  // Set the default active tab on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    const defaultTab = document.querySelector('.tab-item a');
+    if (defaultTab) {
+      defaultTab.click(); // Simulate a click to activate the default tab
+    }
+  });
+</script>
+
+
+<!-- CSS for Horizontal Tabs -->
+<style>
+  .tabs {
+    margin-bottom: 20px; /* Adds space below the tabs */
+  }
+
+  .tab-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start; /* Align tabs to the left */
+    gap: 20px; /* Add spacing between tabs */
+  }
+
+  .tab-item {
+    display: inline;
+  }
+
+  .tab-item a {
+    text-decoration: none;
+    color: #007BFF; /* Link color */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .tab-item a:hover,
+  .tab-item a.active {
+    background-color: #f0f0f0; /* Gray background for hover and active */
+  }
+</style>
+
+
+<ul>
+{% for paper in site.data.pubs.papers %}
+<li>
+ <p>
+    {{ paper.title }} <br>
+    {% for author in paper.authors %}
+      {% if author == "Tessa Han" or author == "Tessa Han*" %} 
+        <b> {{ author }}</b>,    
+        {% else %} {{ author }}, 
+        {% endif %}
+      {% endfor %} and {{ paper.lastauthor }}<br>
+    {% if paper.journal == "Under review" or paper.journal == "Working paper" %}
+      <i>{{ paper.journal }}</i> <br>
+      {% else %} <i>{{ paper.journal }}</i>, {{ paper.year }} <br>
+      {% endif %}
+
+<a class="collapsible"> summary</a>
+<span class="content">
+{{ paper.summary }}
+</span>
+
+{% if paper.link %}
+  / <a href="{{ paper.link | escape}}"> paper</a>
+  {% endif %}
+
+{% if paper.linkabstract %}
+  / <a href="{{ paper.linkabstract | escape}}"> paper (abstract)</a>
+  {% endif %}
+
+{% if paper.code %}
+  / <a href="{{paper.code | escape}}"> code</a>
+  {% endif %}
+
+{% if paper.dataset %}
+  / <a href="{{paper.dataset | escape}}"> dataset</a>
+  {% endif %}
+
+<!-- {% if paper.poster %}
+/ <a href="{{paper.poster | escape}}"> poster </a>
+{% endif %} -->
+
+
+<!-- {% if paper.workshop %} -->
+<!-- uncomment to show workshop link -->
+ <!-- / <a href="{{paper.workshop | escape}}"> workshop version </a> -->
+<!-- {% endif %} -->
+
+
+<!-- vitessce paper -->
+{% if paper.codespecial1 %} <br>
+Tools: <a href="http://vitessce.io/"> Vitessce</a> + <a href="https://github.com/vitessce/vitessce"> code</a> / <a href="https://vitessce.github.io/vitessce-python/"> Python package</a> + <a href="https://github.com/vitessce/vitessce-python"> code</a> / <a href="https://vitessce.github.io/vitessceR/"> R package</a> + <a href="https://github.com/vitessce/vitessceR/"> code</a> / <a href="https://gehlenborglab.shinyapps.io/vitessce-shiny/"> R Shiny</a> + <a href="https://github.com/th789/vitessce-shiny"> code</a>
+{% endif %}
+
+{% if paper.notes %} <br>
+{% for note in paper.notes %}
+  >> {{ note }} <br>
+  {% endfor %}
+{% endif %}
+
+
+</p>
+</li>
+{% endfor %}
+</ul>
+
+
+
+
+<style>
+p{
+  padding-bottom: 10px;
+}
+
+.content {
+  padding: 10px 0px;
+  display: none;
+  overflow: hidden;
+}
+
+</style>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>

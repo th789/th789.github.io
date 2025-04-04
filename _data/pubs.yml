@@ -1,5 +1,17 @@
 papers:
-  - title: MedSafetyBench -- Evaluating and Improving the Medical Safety of Large Language Models
+  - title: (preprint) Building Bridges, Not Walls – Advancing Interpretability by Unifying Feature, Data, and Model Component Attribution
+    authors:
+    - Shichang Zhang
+    - Tessa Han*
+    - Usha Bhalla*
+    lastauthor: Hima Lakkaraju
+    journal: Preprint
+    year: 2025
+    summary: In intepretability research, the areas of feature, data, and component attribution tend to be studied and applied rather independently, resulting in a fragmented research landscape. In this position paper, we argue that 1) these three areas share fundamental similarities, employing common approaches and differing mainly in perspective rather than core techniques, and that 2) this more unified view can advance not only interpretability research, by stimulating cross-domain knowledge transfer, but also broader AI research, by improving model editing, steering, and regulation.
+    link: https://arxiv.org/pdf/2501.18887
+
+
+  - title: MedSafetyBench – Evaluating and Improving the Medical Safety of Large Language Models
     authors:
     - Tessa Han
     - Aounon Kumar
@@ -7,13 +19,12 @@ papers:
     lastauthor: Hima Lakkaraju
     journal: Conference on Neural Information Processing Systems (NeurIPS), Datasets and Benchmarks
     year: 2024
-    synopsis: How do we define, evaluate, and improve the medical safety of large language models (LLMs)? In this paper, we define the notion of medical safety for LLMs, develop a novel benchmark dataset (MedSafetyBench) to assess it, and evaluate and improve the medical safety of medical LLMs. We find that 1) current medical LLMs do not meet standards of general or medical safety and that 2) fine-tuning these medical LLMs using our benchmark dataset significantly improves their safety.
+    summary: How do we define, evaluate, and improve the medical safety of large language models (LLMs)? In this paper, we define the notion of medical safety for LLMs, develop a novel benchmark dataset (MedSafetyBench) to assess it, and evaluate and improve the medical safety of medical LLMs. We find that 1) current medical LLMs do not meet standards of general or medical safety and that 2) fine-tuning these medical LLMs using our benchmark dataset significantly improves their safety.
     link: https://arxiv.org/abs/2403.03744
-    notes:
-    - ICML Workshop on Models of Human Feedback for AI Alignment, 2024
-    - ICML Workshop on Humans, Algorithmic Decision-Making, and Society, 2024
-    - ICML Workshop on Foundation Models in the Wild, 2024
-    - ICML Workshop on Next Generation of AI Safety, 2024
+    code: https://github.com/AI4LIFE-GROUP/med-safety-bench
+    dataset: https://github.com/AI4LIFE-GROUP/med-safety-bench/tree/main/datasets
+    selected: true
+
 
   - title: Characterizing Data Point Vulnerability via Average-Case Robustness
     authors:
@@ -22,12 +33,11 @@ papers:
     lastauthor: Hima Lakkaraju
     journal: Conference on Uncertainty in Artificial Intelligence (UAI)
     year: 2024
-    synopsis: How do we efficiently characterize a data point's vulnerability using average-case robustness? In this paper, we 1) derive efficient analytical estimators, 2) validate their accuracy and efficiency through theoretical and empirical analyses, and 3) demonstrate their usefulness for various tasks involving average-case robustness (e.g., measuring class-level robustness bias and identifying dataset samples that are vulnerable to noise perturbation).
+    summary: How do we efficiently characterize a data point's vulnerability using average-case robustness? In this paper, we 1) derive efficient analytical estimators, 2) validate their accuracy and efficiency through theoretical and empirical analyses, and 3) demonstrate their usefulness for various tasks involving average-case robustness (e.g., measuring class-level robustness bias and identifying dataset samples that are vulnerable to noise perturbation).
     link: https://arxiv.org/abs/2307.13885
     code: https://github.com/AI4LIFE-GROUP/average-case-robustness
-    notes: 
-    - ICML Workshop on Formal Verification of Machine Learning (WFVML), 2023
-    - ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2023
+    selected: true
+
 
   - title: Which Explanation Should I Choose? A Function Approximation Perspective to Characterizing Post Hoc Explanations
     authors:
@@ -36,15 +46,16 @@ papers:
     lastauthor: Hima Lakkaraju
     journal: Conference on Neural Information Processing Systems (NeurIPS)
     year: 2022
-    synopsis: What are the basic properties of post hoc explanation methods and when is each method effective? In this paper, we 1) formalize the local function approximation framework, unifying eight diverse, popular explanation methods; 2) demonstrate that no method can perform optimally in every situation via the no free lunch theorem, calling for a principled approach to selecting among methods; and 3) set forth a guiding principle based on faithful function approximation to guide the selection among existing explanation methods and the design of novel ones.
+    summary: What are the basic properties of post hoc explanation methods and when is each method effective? In this paper, we 1) formalize the local function approximation framework, unifying eight diverse, popular explanation methods; 2) demonstrate that no method can perform optimally in every situation via the no free lunch theorem, calling for a principled approach to selecting among methods; and 3) set forth a guiding principle based on faithful function approximation to guide the selection among existing explanation methods and the design of novel ones.
     link: https://arxiv.org/abs/2206.01254
     code: https://github.com/AI4LIFE-GROUP/lfa 
     workshop: https://icml.cc/virtual/2022/workshop/13449
     notes: 
-    - Best Paper Award, ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022
-    - Oral Spotlight Presentation, ICML IMLH Workshop, 2022
+    - <span style = "background-color:#d2efdb">Best Paper Award</span>, ICML Workshop on Interpretable ML for Healthcare (IMLH), 2022
+    selected: true
 
-  - title: The Disagreement Problem in Explainable Machine Learning -- A Practitioner’s Perspective
+
+  - title: The Disagreement Problem in Explainable Machine Learning – A Practitioner’s Perspective
     authors:
     - Satyapriya Krishna*
     - Tessa Han*
@@ -55,10 +66,12 @@ papers:
     lastauthor: Hima Lakkaraju
     journal: Transactions on Machine Learning Research (TMLR)
     year: 2024
-    synopsis: To what extent do explanations from post hoc explanation methods agree and how are disagreeing explanations resolved in practice? In this paper, we introduce and systematically study the “disagreement problem” in explainable machine learning. We find that 1) existing explanation methods often generate disagreeing explanations and 2) practitioners do not have a principled approach to selecting among disagreeing explanations, resorting to ad hoc heuristics such as personal preference.
+    summary: To what extent do explanations from post hoc explanation methods agree and how are disagreeing explanations resolved in practice? In this paper, we introduce and systematically study the “disagreement problem” in explainable machine learning. We find that 1) existing explanation methods often generate disagreeing explanations and 2) practitioners do not have a principled approach to selecting among disagreeing explanations, resorting to ad hoc heuristics such as personal preference.
     link: https://arxiv.org/abs/2202.01602
     workshop: https://chi-trait.github.io/#/schedule
-    notesspecial1: see 'publications.html'
+    notes:
+    - <span style = "background-color:#d2efdb">Media coverage</span> - Featured in Fortune (<a href="https://fortune.com/2022/02/08/learning-to-code-deepmind-alphacode/" target="_blank">Article 1</a> and <a href="https://fortune.com/2022/03/22/ai-explainable-radiology-medicine-crisis-eye-on-ai/" target="_blank">Article 2</a>) and Analytics India Magazine (<a href="https://analyticsindiamag.com/explainable-ais-disagreement-problem/" target="_blank">Article</a>)
+
 
   - title: Is Ignorance Bliss? Investigating How Faithfulness and Alignment of Post Hoc Explanations Affect Model Trust in Laypeople and Domain Experts
     authors:
@@ -69,23 +82,21 @@ papers:
     lastauthor: Hima Lakkaraju
     journal: Machine Learning for Health Symposium (ML4H)
     year: 2023
-    synopsis: What factors affect laypeople and domain experts' trust in post hoc explanations? In this paper, we find that while laypeople base their trust on explanation faithfulness, domain experts (incorrectly) base theirs on explanation alignment, suggesting a cognitive bias among domain experts.
+    summary: What factors affect laypeople and domain experts' trust in post hoc explanations? In this paper, we find that while laypeople base their trust on explanation faithfulness, domain experts (incorrectly) base theirs on explanation alignment, suggesting a cognitive bias among domain experts.
     link: https://arxiv.org/abs/2312.05690
-    notes: 
-    - Global Symposium on Artificial Intelligence in Dentistry, 2023
 
-  - title: Hevelius Report -- Visualizing Web-Based Motility Test Data for Clinical Decision and Learning Support
+
+  - title: Hevelius Report – Visualizing Web-Based Motility Test Data for Clinical Decision and Learning Support
     authors:
-    - Hongjin
+    - Hongjin Lin
     - Tessa Han
     - Krzysztof Gajos
     lastauthor: Anoopum Gupta
     journal: ACM SIGACCESS Conference on Computers and Accessibility (ASSETS)
     year: 2024
-    synopsis: How do we measure, visualize, and interpret the mobility of patients with Parkinson's or ataxia over time? In this work, we develop Hevelius Report, a visualization tool to track the mobility of these patients, and demonstrate its utility.
+    summary: How do we measure, visualize, and interpret the mobility of patients with Parkinson's or ataxia over time? In this work, we develop Hevelius Report, a visualization tool to track the mobility of these patients, and demonstrate its utility.
     link: https://arxiv.org/abs/2409.06088
-    notes: 
-    - Global Symposium on Artificial Intelligence in Dentistry, 2023
+
 
   - title: Python and R packages for Interactive Visualization of Spatial Single-Cell Omics Data
     authors:
@@ -97,9 +108,10 @@ papers:
     lastauthor: Nils Gehlenborg
     journal: Conference on Intelligent Systems for Molecular Biology and European Conference on Computational Biology (ISMB/ECCB)
     year: 2021
-    synopsis: How do we effectively integrate and visualize high-dimensional, multimodal, spatial data in single-cell genomics? In this paper, to enable these visualizations, we develop Vitessce (Visual integration tool for exploration of spatial single cell experiments), a web-based, interactive visualization tool. We also develop associated Python, R/RStudio, and RShiny tools to enable using Vitessce within the Python and R bioinformatics ecosystems.
+    summary: How do we effectively integrate and visualize high-dimensional, multimodal, spatial data in single-cell genomics? In this paper, to enable these visualizations, we develop Vitessce (Visual integration tool for exploration of spatial single cell experiments), a web-based, interactive visualization tool. We also develop associated Python, R/RStudio, and RShiny tools to enable using Vitessce within the Python and R bioinformatics ecosystems.
     link: https://www.youtube.com/watch?v=xsb-zz8JrVU
     codespecial1: see 'publications.html'
+
 
   - title: Genome-Wide Somatic Alterations in Multiple Myeloma Reveal a Superior Outcome Group
     authors:
@@ -121,7 +133,7 @@ papers:
     lastauthor: Nikhil Munshi
     journal: Journal of Clinical Oncology
     year: 2020
-    synopsis: What is the genomic landscape of multiple myeloma and what are the genomic markers associated long-term survival? In this paper, we characterize the genomic landscape of multiple myeloma using deep whole-genome sequencing data. We find mutational signatures that reveal mechanisms of progression and variability in mutational load among known subgroups. In addition, we identify a new, genomically-defined subgroup (characterized by lower mutational load, age-related mutations, and the NRAS mutation) with prolonged overall and progression-free survival.
+    summary: What is the genomic landscape of multiple myeloma and what are the genomic markers associated long-term survival? In this paper, we characterize the genomic landscape of multiple myeloma using deep whole-genome sequencing data. We find mutational signatures that reveal mechanisms of progression and variability in mutational load among known subgroups. In addition, we identify a new, genomically-defined subgroup (characterized by lower mutational load, age-related mutations, and the NRAS mutation) with prolonged overall and progression-free survival.
     link: https://ascopubs.org/doi/full/10.1200/JCO.20.00461
 
 
@@ -142,10 +154,11 @@ papers:
     lastauthor: Nikhil Munshi
     journal: Blood (Supplemental Issue)
     year: 2019
-    synopsis: What is the role of miRNAs in the prognosis and progression of multiple myeloma? Here, we find that dysregulated miRNAs are predictive of disease prognosis in newly-diagnosed multiple myeloma patients and may contribute to disease progression by targeting key multiple myeloma genes (including MAF, BCL2, 14-3-3 and MYEOV).
+    summary: What is the role of miRNAs in the prognosis and progression of multiple myeloma? Here, we find that dysregulated miRNAs are predictive of disease prognosis in newly-diagnosed multiple myeloma patients and may contribute to disease progression by targeting key multiple myeloma genes (including MAF, BCL2, 14-3-3 and MYEOV).
     linkabstract: https://ashpublications.org/blood/article/134/Supplement_1/4348/424591/Dysregulated-Mirnas-after-Uniform-Treatment
     notes:
-    - Abstract Achievement Award, American Society of Hematology, 2019
+    - <span style = "background-color:#d2efdb">Abstract Achievement Award</span>, American Society of Hematology, 2019
+
 
   - title: The Landscape of Genome-Wide Somatic Alterations Identifies a Good-Risk Group in Newly-Diagnosed Multiple Myeloma
     authors:
@@ -169,6 +182,5 @@ papers:
     lastauthor: Nikhil Munshi
     journal: Blood (Supplemental Issue)
     year: 2019
-    synopsis: At the genomic level, what distinguishes low-risk (long-survival) multiple myeloma patients from high-risk (short-survival) multiple myeloma patients? Here, we analyze whole-genome and whole-transcriptome sequencing data from multiple myeloma patients and identify a new low-risk subgroup in which chromosome and telomere maintenance pathways and genes associated with low bone disease are upregulated, processes associated with DNA damage are downregulated, and there are lower mutation rates for known oncogenes and tumor suppressors (e.g. TP53, CSMD1, and FAT3/FAT4).
+    summary: At the genomic level, what distinguishes low-risk (long-survival) multiple myeloma patients from high-risk (short-survival) multiple myeloma patients? Here, we analyze whole-genome and whole-transcriptome sequencing data from multiple myeloma patients and identify a new low-risk subgroup in which chromosome and telomere maintenance pathways and genes associated with low bone disease are upregulated, processes associated with DNA damage are downregulated, and there are lower mutation rates for known oncogenes and tumor suppressors (e.g. TP53, CSMD1, and FAT3/FAT4).
     linkabstract: https://ashpublications.org/blood/article/134/Supplement_1/3055/423505/The-Landscape-of-Genome-Wide-Somatic-Alterations
-

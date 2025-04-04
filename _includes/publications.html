@@ -1,74 +1,188 @@
+<!-- Navigation Buttons -->
+<div class="tabs">
+  <ul class="tab-list">
+    <li class="tab-item"><a href="#selected-publications-header">selected publications</a></li>
+    <li class="tab-item"><a href="#all-publications-and-preprints-header">all publications and preprints</a></li>
+  </ul>
+</div>
 
-<ul>
-{% for paper in site.data.pubs.papers %}
-<li>
- <p>
-    {{ paper.title }} <br>
-    {% for author in paper.authors %}
-      {% if author == "Tessa Han" or author == "Tessa Han*" %} 
-        <b> {{ author }}</b>,    
-        {% else %} {{ author }}, 
+<!-- Content Sections -->
+<div id="selected-publications">
+  <h2 id="selected-publications-header" style="font-weight:300">Selected publications</h2>
+  <ul>
+    {% for paper in site.data.pubs.papers %}
+    {% if paper.selected %}
+    <li>
+      <p>
+          {{ paper.title }} <br>
+          {% for author in paper.authors %}
+            {% if author == "Tessa Han" or author == "Tessa Han*" %} 
+              <b> {{ author }}</b>,    
+              {% else %} {{ author }}, 
+              {% endif %}
+            {% endfor %} and {{ paper.lastauthor }}<br>
+          {% if paper.journal == "Under review" or paper.journal == "Working paper" %}
+            <i>{{ paper.journal }}</i> <br>
+            {% else %} <i>{{ paper.journal }}</i>, {{ paper.year }} <br>
+            {% endif %}
+        
+          <!-- summary + links for paper -->
+          <a class="collapsible"> summary</a>
+          <span class="content">
+          {{ paper.summary }}
+          </span>
+          
+          {% if paper.link %}
+            / <a href="{{ paper.link | escape}}" target="_blank"> paper</a>
+            {% endif %}
+          {% if paper.linkabstract %}
+            / <a href="{{ paper.linkabstract | escape}}" target="_blank"> paper (abstract)</a>
+            {% endif %}
+          {% if paper.code %}
+            / <a href="{{paper.code | escape}}" target="_blank"> code</a>
+            {% endif %}
+          {% if paper.dataset %}
+            / <a href="{{paper.dataset | escape}}" target="_blank"> dataset</a>
+            {% endif %}
+          
+          
+          <!-- notes for paper: awards, media -->
+          {% if paper.notes %} <br>
+          {% for note in paper.notes %}
+            >> {{ note }} <br>
+            {% endfor %}
+          {% endif %}
+
+        
+        
+      </p>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
+
+<!--- all publications and preprints -->
+<div id="all-publications-and-preprints">
+  <h2 id="all-publications-and-preprints-header" style="font-weight:300; margin-top: 30px;">All publications and preprints</h2>
+  <ul>
+    {% for paper in site.data.pubs.papers %}
+    <li>
+      <p>
+        {{ paper.title }} <br>
+        {% for author in paper.authors %}
+          {% if author == "Tessa Han" or author == "Tessa Han*" %} 
+            <b> {{ author }}</b>,    
+            {% else %} {{ author }}, 
+            {% endif %}
+          {% endfor %} and {{ paper.lastauthor }}<br>
+        {% if paper.journal == "Preprint" or paper.journal == "Working paper" %}
+          <!-- <i>{{ paper.journal }}</i> <br> -->
+          <i> </i>
+          {% else %} <i>{{ paper.journal }}</i>, {{ paper.year }} <br>
+          {% endif %}
+    
+        <!-- summary + links for paper -->
+        <a class="collapsible"> summary</a>
+        <span class="content">
+        {{ paper.summary }}
+        </span>
+        
+        {% if paper.link %}
+          / <a href="{{ paper.link | escape}}" target="_blank"> paper</a>
         {% endif %}
-      {% endfor %} and {{ paper.lastauthor }}<br>
-    {% if paper.journal == "Under review" or paper.journal == "Working paper" %}
-      <i>{{ paper.journal }}</i> <br>
-      {% else %} <i>{{ paper.journal }}</i>, {{ paper.year }} <br>
-      {% endif %}
-
-<a class="collapsible"> synopsis</a>
-<span class="content">
-{{ paper.synopsis }}
-</span>
-
-{% if paper.link %}
-  / <a href="{{ paper.link | escape}}"> paper</a>
-  {% endif %}
-
-{% if paper.linkabstract %}
-  / <a href="{{ paper.linkabstract | escape}}"> paper (abstract)</a>
-  {% endif %}
-
-{% if paper.code %}
-  / <a href="{{paper.code | escape}}"> code</a>
-  {% endif %}
-
-
-
-{% if paper.workshop %}
-<!-- uncomment to show workshop link -->
- <!-- / <a href="{{paper.workshop | escape}}"> workshop version </a> -->
-{% endif %}
-
-<!-- vitessce paper -->
-{% if paper.codespecial1 %} <br>
-Tools: <a href="http://vitessce.io/"> Vitessce</a> + <a href="https://github.com/vitessce/vitessce"> code</a> / <a href="https://vitessce.github.io/vitessce-python/"> Python package</a> + <a href="https://github.com/vitessce/vitessce-python"> code</a> / <a href="https://vitessce.github.io/vitessceR/"> R package</a> + <a href="https://github.com/vitessce/vitessceR/"> code</a> / <a href="https://gehlenborglab.shinyapps.io/vitessce-shiny/"> R Shiny</a> + <a href="https://github.com/th789/vitessce-shiny"> code</a>
-{% endif %}
-
-{% if paper.notes %} <br>
-{% for note in paper.notes %}
-  >> {{ note }} <br>
-  {% endfor %}
-{% endif %}
+        {% if paper.linkabstract %}
+          / <a href="{{ paper.linkabstract | escape}}" target="_blank"> paper (abstract)</a>
+        {% endif %}
+        {% if paper.code %}
+          / <a href="{{paper.code | escape}}" target="_blank"> code</a>
+        {% endif %}
+        {% if paper.dataset %}
+          / <a href="{{paper.dataset | escape}}" target="_blank"> dataset</a>
+        {% endif %}
+        
+        
+        <!-- vitessce paper -->
+        {% if paper.codespecial1 %} <br>
+        Tools: <a href="http://vitessce.io/"> Vitessce</a> + <a href="https://github.com/vitessce/vitessce"> code</a> / <a href="https://vitessce.github.io/vitessce-python/"> Python package</a> + <a href="https://github.com/vitessce/vitessce-python"> code</a> / <a href="https://vitessce.github.io/vitessceR/"> R package</a> + <a href="https://github.com/vitessce/vitessceR/"> code</a> / <a href="https://gehlenborglab.shinyapps.io/vitessce-shiny/"> R Shiny</a> + <a href="https://github.com/th789/vitessce-shiny"> code</a>
+        {% endif %}
+        
+        <!-- notes for paper: awards, media -->
+        {% if paper.notes %} <br>
+        {% for note in paper.notes %}
+          >> {{ note }} <br>
+          {% endfor %}
+        {% endif %}
+        
+      </p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 
 
-<!-- disagreement paper -->
-{% if paper.notesspecial1 %} <br>
->> Oral Spotlight Presentation, ICML Workshop on Interpretable Machine Learning for Healthcare (IMLH), 2022 <br>
->> Presentation, ACM CHI Workshop on Trust and Reliance in AI-Human Teams (TRAIT), 2022 <br>
->> Featured in Fortune (<a href="https://fortune.com/2022/02/08/learning-to-code-deepmind-alphacode/">Article 1</a> and <a href="https://fortune.com/2022/03/22/ai-explainable-radiology-medicine-crisis-eye-on-ai/">Article 2</a>) <br>
->> Featured in Analytics India Magazine (<a href="https://analyticsindiamag.com/explainable-ais-disagreement-problem/">Article</a>) <br>
-{% endif %}
 
 
-{% if paper.poster %}
-/ <a href="{{paper.poster | escape}}"> poster </a>
-{% endif %}
+<!-- CSS for Horizontal Tabs -->
+<style>
+  .tabs {
+    margin-bottom: 20px; /* Adds space below the tabs */
+  }
+
+  .tab-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start; /* Align tabs to the left */
+    gap: 20px; /* Add spacing between tabs */
+  }
+
+  .tab-item {
+    display: inline;
+  }
+
+  .tab-item a {
+    text-decoration: none;
+    color: #007BFF; /* Link color */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .tab-item a:hover,
+  .tab-item a.active {
+    background-color: #f0f0f0; /* Gray background for hover and active */
+  }
+</style>
 
 
-</p>
-</li>
-{% endfor %}
-</ul>
+
+
+<!--- make links the same color, even if previously visited-->
+<style>
+  a {
+    color: #007BFF; /* Set a consistent blue color for all links */
+    text-decoration: none; /* Optional: Remove underline */
+  }
+
+  a:visited {
+    color: #007BFF; /* Ensure visited links have the same color */
+  }
+
+  a:hover {
+    color: #0056b3; /* Optional: Slightly darker blue on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+  }
+
+  a:active {
+    color: #0056b3; /* Optional: Same as hover for active state */
+  }
+</style>
+
+
 
 <style>
 p{
